@@ -35,7 +35,7 @@ statToggle = "Locked"
       label = "Hero Name"
     [character.attributesTop.advances]
       type = "Number"
-      label = "Advances"       
+      label = "Advances"
     [character.attributesTop.xp]
       type = "Xp"
       label = "Potential"
@@ -55,10 +55,10 @@ statToggle = "Locked"
       description = "Choose all that apply:"
       options = [
         "Afraid (-2 to engage)",
-        "Angry (-2 to comfort)",
-        "Guilty (-2 to provoke)",
+        "Angry (-2 to comfort or pierce)",
+        "Guilty (-2 to provoke or assess)",
         "Hopeless (-2 to unleash)",
-        "Insecure (-2 to defend)"
+        "Insecure (-2 to defend or reject)"
       ]
     [character.attributesLeft.look]
       type = "LongText"
@@ -92,9 +92,6 @@ statToggle = "Locked"
     [npc.attributesTop.realName]
       type = "Text"
       label = "Real Name"
-    [npc.attributesTop.harm]
-      type = "Resource"
-      label = "Harm"
 
   [npc.attributesLeft]
     [npc.attributesLeft.conditions]
@@ -107,7 +104,7 @@ statToggle = "Locked"
         "Guilty",
         "Hopeless",
         "Insecure"
-      ]  
+      ]
     [npc.attributesLeft.drive]
       type = "LongText"
       label = "Drive"
@@ -116,8 +113,9 @@ statToggle = "Locked"
       label = "Abilities"
     [npc.attributesLeft.generation]
       type = "Text"
-      label = "Generation"  
+      label = "Generation"
 
   # Define logical groups for moves.
   [npc.moveTypes]
     villain = "Villain Moves"
+    condition = "Condition Moves"
