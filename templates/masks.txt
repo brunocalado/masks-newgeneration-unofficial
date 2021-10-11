@@ -35,7 +35,7 @@ statToggle = "Locked"
       label = "Hero Name"
     [character.attributesTop.advances]
       type = "Number"
-      label = "Advances"      
+      label = "Advances"       
     [character.attributesTop.xp]
       type = "Xp"
       label = "Potential"
@@ -51,13 +51,14 @@ statToggle = "Locked"
     [character.attributesLeft.conditions]
       type = "ListMany"
       label = "Conditions"
+      condition = true
       description = "Choose all that apply:"
       options = [
-        "Afraid",
-        "Angry",
-        "Guilty",
-        "Hopeless",
-        "Insecure"
+        "Afraid (-2 to engage)",
+        "Angry (-2 to comfort)",
+        "Guilty (-2 to provoke)",
+        "Hopeless (-2 to unleash)",
+        "Insecure (-2 to defend)"
       ]
     [character.attributesLeft.look]
       type = "LongText"
@@ -91,6 +92,9 @@ statToggle = "Locked"
     [npc.attributesTop.realName]
       type = "Text"
       label = "Real Name"
+    [npc.attributesTop.harm]
+      type = "Resource"
+      label = "Harm"
 
   [npc.attributesLeft]
     [npc.attributesLeft.conditions]
